@@ -1,0 +1,72 @@
+{
+	"common": {
+		"name": "opentherm",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie"
+			}
+		},
+		"title": "Opentherm",
+		"titleLang": {
+			"en": "opentherm",
+			"de": "opentherm",
+			"ru": "opentherm",
+			"pt": "opentherm",
+			"nl": "opentherm",
+			"fr": "opentherm",
+			"it": "opentherm",
+			"es": "opentherm",
+			"pl": "opentherm"
+		},
+		"desc": {
+			"en": "Integrate all features of the OpenTherm Gateway into ioBroker",
+			"de": "Integriert alle Funktionen des OpenTherm Gateway in ioBroker",
+			"ru": "opentherm",
+			"pt": "opentherm",
+			"nl": "Integreerd alle funtionaliteiten van OpenTherm Gateway in ioBroker",
+			"fr": "opentherm",
+			"it": "opentherm",
+			"es": "opentherm",
+			"pl": "opentherm"
+		},
+		"authors": [
+			"Dutchman <rdrozda@hotmail.com>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "opentherm.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/DutchmanNL/ioBroker.opentherm/master/admin/opentherm.png",
+		"readme": "https://github.com/DutchmanNL/ioBroker.opentherm/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "general",
+		"materialize": true,
+		"dependencies": [
+			{
+				"admin": ">=3.0.0"
+			}
+		]
+	},
+	"native": {
+		"ipaddr": "localhost",
+		"port": "8080"
+	},
+	"objects": [],
+	"instanceObjects": []
+}

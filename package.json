@@ -1,0 +1,77 @@
+{
+  "_from": "file:/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
+  "_id": "iobroker.opentherm@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-sNAIpVLnpzedp3rqxNsFqmfnIvt8LNEPykNj2TSrw/WppeQWqc3E2bk1ibf6zZTthjH6QDKQi2Ow7BRULAhQEw==",
+  "_location": "/iobroker.opentherm",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "/opt/iobroker",
+    "raw": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
+    "rawSpec": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
+    "saveSpec": "file:/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
+    "fetchSpec": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
+  "_shasum": "79735946f2ebba2dab43514564a990f47981e18a",
+  "_spec": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
+  "_where": "/opt/iobroker",
+  "author": {
+    "name": "Dutchman",
+    "email": "rdrozda@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/DutchmanNL/ioBroker.opentherm/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@iobroker/adapter-core": "^1.0.1",
+    "@types/request": "^2.48.1",
+    "request": "^2.88.0"
+  },
+  "deprecated": false,
+  "description": "opentherm",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.12",
+    "@types/proxyquire": "^1.3.28",
+    "@types/sinon": "^5.0.7",
+    "@types/sinon-chai": "^3.2.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.1.1",
+    "sinon-chai": "^3.3.0"
+  },
+  "homepage": "https://github.com/DutchmanNL/ioBroker.opentherm",
+  "keywords": [
+    "ioBroker",
+    "template",
+    "Smart Home",
+    "home automation"
+  ],
+  "license": "MIT",
+  "main": "main.js",
+  "name": "iobroker.opentherm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DutchmanNL/ioBroker.opentherm.git"
+  },
+  "scripts": {
+    "lint": "npm run lint:js",
+    "lint:js": "eslint",
+    "test": "npm run test:js && npm run test:package",
+    "test:iobroker": "mocha test/testStartup.js --exit",
+    "test:js": "mocha --opts test/mocha.custom.opts",
+    "test:package": "mocha test/testPackageFiles.js --exit"
+  },
+  "version": "0.0.1"
+}
