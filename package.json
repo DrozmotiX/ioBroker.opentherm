@@ -1,6 +1,6 @@
 {
   "_from": "file:/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
-  "_id": "iobroker.opentherm@0.0.1",
+  "_id": "iobroker.opentherm@0.1.5",
   "_inBundle": false,
   "_integrity": "sha512-sNAIpVLnpzedp3rqxNsFqmfnIvt8LNEPykNj2TSrw/WppeQWqc3E2bk1ibf6zZTthjH6QDKQi2Ow7BRULAhQEw==",
   "_location": "/iobroker.opentherm",
@@ -73,5 +73,5 @@
     "test:js": "mocha --opts test/mocha.custom.opts",
     "test:package": "mocha test/testPackageFiles.js --exit"
   },
-  "version": "0.0.1"
+  "version": "0.1.5"
 }
