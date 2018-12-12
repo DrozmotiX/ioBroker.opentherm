@@ -55,7 +55,7 @@
 		"readme": "https://github.com/DutchmanNL/ioBroker.opentherm/blob/master/README.md",
 		"loglevel": "info",
 		"mode": "daemon",
-		"type": "general",
+		"type": "energy",
 		"materialize": true,
 		"dependencies": [
 			{
