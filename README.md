@@ -17,10 +17,13 @@ For more information http://otgw.tclcode.com/index.html#intro with all credits t
 * Connect to OpenTherm Gateway by TCP/IP
 
 ## To-Do
-* Connect to OpenTherm Gateway by TCP/IP
 * Connect to OpenTherm Gateway by direcy USB connection
 * Provide TCP/IP relay server to allow other OpenTherm monitor software connection by this instance (when direct USB connection is used)
 * Where possible, adjust values in ioBroker and send command to Opentherm
+
+### 0.1.8
+* Fixed issue for incorrect object type (boolean/number/string)
+* Implemented rounding states to 1 digit after comma
 
 ### 0.1.7
 * implemented Developer mode (all states for all message types will be created in _Dev

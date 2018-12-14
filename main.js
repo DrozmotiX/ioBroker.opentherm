@@ -75,7 +75,6 @@ function main() {
 		// Run check on data input if received message has correct format
 		const verify = checkhex.checkinput(adapter,data);
 
-//		adapter.log.info(JSON.stringify(verify))
 		// Only call translation function when received value is valid
 		if (verify != undefined) {
 			// Translate OpenTherm message to human readable objects and values
@@ -98,6 +97,7 @@ function main() {
 					if (DevLogging){adapter.log.info("Combined data with attribute values : " + JSON.stringify(attributes[values[i].Device]))}
 
 					let channel = attributes[values[i].Device].channel
+					let value = values[i].Value
 					const name = attributes[values[i].Device].name;
 					const description = attributes[values[i].Device].description;
 					const role = attributes[values[i].Device].role;
@@ -105,12 +105,17 @@ function main() {
 					const write = attributes[values[i].Device].write;
 					const cat = values[i].msgType;
 
+					// Round values if they are numbers to ensure only 2 digits after comma
+					if (objtype == "number") {
+						value = Math.round(value * 10)/10
+					}
+					
 					if (devData){
 						doStateCreate("_Dev." + cat + "." + name,description,objtype,role,unit,write);
-						adapter.setState("_Dev." + cat + "." + name, { val: values[i].Value, ack: true });
+						adapter.setState("_Dev." + cat + "." + name, { val: value, ack: true });
 					}
 						//Write all channels to "raw" tree for developer purposes
-					if (DevLogging){adapter.log.info(name + " with value : " + values[i].Value + unit);}
+					if (DevLogging){adapter.log.info(name + " with value : " + value + unit);}
 
 					// Read only Read-ACK related values and store in states (we need to find out which datatype for which state must be used!)
 					if (values[i].msgType == "4"){
@@ -118,7 +123,7 @@ function main() {
 						if (channel != "") {channel = channel + ".";}
 
 						doStateCreate(channel + name,description,objtype,role,unit,write);
-						adapter.setState(channel + name, { val: values[i].Value, ack: true });
+						adapter.setState(channel + name, { val: value, ack: true });
 						if (DevLogging){adapter.log.info("Data written to state : " + name);}
 
 					}
@@ -150,15 +155,12 @@ function toObjtype (value) {
 	// Lets first ensure what kind of datatype we have
 	if (value == 'true' || value == 'false') {
 		objtype = 'boolean';
-		} else if (typeof value === 'string') {
-		const f = parseFloat(value);
-		// @ts-ignore this check should be handled differently in later release
-		if (f === value) {
+		} else if (Number.isNaN(parseFloat(value)) === false) {
 			objtype = "number";
 		} else {
 			objtype = "string";
 		}
-	}
+
 	return objtype;
 }
 
