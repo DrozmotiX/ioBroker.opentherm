@@ -1,7 +1,7 @@
 {
 	"common": {
 		"name": "opentherm",
-		"version": "0.1.8",
+		"version": "0.1.9",
 		"news": {
 			"0.0.1": {
 				"en": "initial release",
@@ -67,7 +67,11 @@
 		"ipaddr": "localhost",
 		"port": "7686",
 		"DevMode" : "",
-		"DevLogging" : ""
+		"DevLogging" : "",
+		"byUSB":"true",
+		"byTCPIP":"false",
+		"USB_Device_list":"",
+		"USBDevice": ""
 	},
 	"objects": [],
 	"instanceObjects": []

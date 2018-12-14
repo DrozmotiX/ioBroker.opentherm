@@ -7,7 +7,6 @@ Opentherm is an gateway protocol used by several modern heating systems like Rem
 For more information http://otgw.tclcode.com/index.html#intro with all credits to the developers.
 
 ### Featured Functionality in final state :
-* Connect to OpenTherm Gateway by direcy USB connection
 * Provide TCP/IP relay server to allow other OpenTherm monitor software connection by this instance (when direct USB connection is used)
 * Where possible, adjust values in ioBroker and send command to Opentherm
 * Please feel free to add feature requests 
@@ -15,11 +14,17 @@ For more information http://otgw.tclcode.com/index.html#intro with all credits t
 ### Currently implemented
 
 * Connect to OpenTherm Gateway by TCP/IP
+* Connect to OpenTherm Gateway direcly by USB connection
 
 ## To-Do
-* Connect to OpenTherm Gateway by direcy USB connection
+* Connect to OpenTherm Gateway directly by USB connection
 * Provide TCP/IP relay server to allow other OpenTherm monitor software connection by this instance (when direct USB connection is used)
-* Where possible, adjust values in ioBroker and send command to Opentherm
+* Where 
+
+### 0.1.9
+* Implemented direct connection by USB
+* added configuration options to adapter settings
+* Fixed issue for incorrect logging
 
 ### 0.1.8
 * Fixed issue for incorrect object type (boolean/number/string)
