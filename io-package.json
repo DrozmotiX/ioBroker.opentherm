@@ -66,10 +66,10 @@
 	"native": {
 		"ipaddr": "localhost",
 		"port": "7686",
-		"DevMode" : "",
-		"DevLogging" : "",
-		"byUSB":"true",
-		"byTCPIP":"false",
+		"DevMode" : false,
+		"DevLogging" : false,
+		"byUSB":false,
+		"byTCPIP":false,
 		"USB_Device_list":"",
 		"USBDevice": ""
 	},
