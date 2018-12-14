@@ -1,6 +1,6 @@
 /*global systemDictionary:true */
 'use strict';
-
+// @ts-ignore
 systemDictionary = {
 	"opentherm adapter settings": {
 		"en": "Opentherm setting",
@@ -30,6 +30,28 @@ systemDictionary = {
 		"ru": "Вариант 2 не",
 		"pt": "A opção 2 não é",
 		"nl": "Port van oT-Monitor",
+		"fr": "L'option 2 n'est pas",
+		"it": "L'opzione 2 no",
+		"es": "La opción 2 no es",
+		"pl": "Opcja 2 nie jest"
+	},
+	"option 3 description": {
+		"en": "Development Mode",
+		"de": "Entwickler Modus",
+		"ru": "Вариант 2 не",
+		"pt": "A opção 2 não é",
+		"nl": "Ontwikkelaar Modus",
+		"fr": "L'option 2 n'est pas",
+		"it": "L'opzione 2 no",
+		"es": "La opción 2 no es",
+		"pl": "Opcja 2 nie jest"
+	},
+	"option 4 description": {
+		"en": "Developer Logging",
+		"de": "Entwickler Logging",
+		"ru": "Вариант 2 не",
+		"pt": "A opção 2 não é",
+		"nl": "Ontwikkelaar Modus",
 		"fr": "L'option 2 n'est pas",
 		"it": "L'opzione 2 no",
 		"es": "La opción 2 no es",

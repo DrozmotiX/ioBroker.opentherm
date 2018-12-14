@@ -22,6 +22,11 @@ For more information http://otgw.tclcode.com/index.html#intro with all credits t
 * Provide TCP/IP relay server to allow other OpenTherm monitor software connection by this instance (when direct USB connection is used)
 * Where possible, adjust values in ioBroker and send command to Opentherm
 
+### 0.1.7
+* implemented Developer mode (all states for all message types will be created in _Dev
+* Implemented Developer Logging mode (if not activated no information is written to log !)
+* Several small backend fixes
+
 ### 0.1.6
 * Creation of logical channels
 * creation of states
