@@ -1,6 +1,9 @@
 ![alt text](https://raw.githubusercontent.com/DutchmanNL/ioBroker.opentherm/master/admin/opentherm_large.png)
 
 # Opentherm integration ioBroker
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/iobroker-community-adapters/ioBroker.opentherm.svg)](https://greenkeeper.io/)
+
 This adapter integrates all features of the opentherm gateway into ioBroker.
 Opentherm is an gateway protocol used by several modern heating systems like Remeha.
 
