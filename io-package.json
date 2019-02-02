@@ -61,7 +61,8 @@
 			{
 				"admin": ">=3.0.0"
 			}
-		]
+		],
+		"license": "MIT",
 	},
 	"native": {
 		"ipaddr": "localhost",
