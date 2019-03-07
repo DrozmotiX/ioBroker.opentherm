@@ -1,7 +1,9 @@
 ![alt text](https://raw.githubusercontent.com/DutchmanNL/ioBroker.opentherm/master/admin/opentherm_large.png)
 
 # Opentherm integration ioBroker
-
+![alt text](https://travis-ci.org/iobroker-community-adapters/ioBroker.opentherm.svg?branch=master)
+[![NPM version](http://img.shields.io/npm/v/iobroker.opentherm.svg)](https://www.npmjs.com/package/iobroker.opentherm)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.opentherm.svg)](https://www.npmjs.com/package/iobroker.opentherm)
 [![Greenkeeper badge](https://badges.greenkeeper.io/iobroker-community-adapters/ioBroker.opentherm.svg)](https://greenkeeper.io/)
 
 This adapter integrates all features of the opentherm gateway into ioBroker.
