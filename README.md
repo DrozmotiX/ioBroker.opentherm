@@ -1,7 +1,9 @@
 ![alt text](https://raw.githubusercontent.com/DutchmanNL/ioBroker.opentherm/master/admin/opentherm_large.png)
 
 # Opentherm integration ioBroker
-
+![alt text](https://travis-ci.org/iobroker-community-adapters/ioBroker.opentherm.svg?branch=master)
+![Number of Installations](http://iobroker.live/badges/opentherm-installed.svg) ![Number of Installations](http://iobroker.live/badges/opentherm-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.opentherm.svg)](https://www.npmjs.com/package/iobroker.opentherm)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.opentherm.svg)](https://www.npmjs.com/package/iobroker.opentherm)
 [![Greenkeeper badge](https://badges.greenkeeper.io/iobroker-community-adapters/ioBroker.opentherm.svg)](https://greenkeeper.io/)
 
 This adapter integrates all features of the opentherm gateway into ioBroker.
@@ -23,6 +25,10 @@ For more information http://otgw.tclcode.com/index.html#intro with all credits t
 * Connect to OpenTherm Gateway directly by USB connection
 * Provide TCP/IP relay server to allow other OpenTherm monitor software connection by this instance (when direct USB connection is used)
 * Where 
+
+## Changelog
+### 0.2.1
+* Fix translations
 
 ### 0.1.9
 * Implemented direct connection by USB
@@ -53,7 +59,7 @@ For more information http://otgw.tclcode.com/index.html#intro with all credits t
 ## License
 MIT License
 
-Copyright (c) 2018 Dutchman
+Copyright (c) 2019 DutchmanNL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

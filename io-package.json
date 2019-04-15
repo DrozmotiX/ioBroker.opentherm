@@ -1,79 +1,94 @@
 {
-	"common": {
-		"name": "opentherm",
-		"version": "0.1.9",
-		"news": {
-			"0.0.1": {
-				"en": "initial release",
-				"de": "Erstveröffentlichung",
-				"ru": "Начальная версия",
-				"pt": "lançamento inicial",
-				"nl": "Eerste uitgave",
-				"fr": "Première version",
-				"it": "Versione iniziale",
-				"es": "Versión inicial",
-				"pl": "Pierwsze wydanie"
-			}
-		},
-		"title": "Opentherm",
-		"titleLang": {
-			"en": "opentherm",
-			"de": "opentherm",
-			"ru": "opentherm",
-			"pt": "opentherm",
-			"nl": "opentherm",
-			"fr": "opentherm",
-			"it": "opentherm",
-			"es": "opentherm",
-			"pl": "opentherm"
-		},
-		"desc": {
-			"en": "Integrate all features of the OpenTherm Gateway into ioBroker",
-			"de": "Integriert alle Funktionen des OpenTherm Gateway in ioBroker",
-			"ru": "opentherm",
-			"pt": "opentherm",
-			"nl": "Integreerd alle funtionaliteiten van OpenTherm Gateway in ioBroker",
-			"fr": "opentherm",
-			"it": "opentherm",
-			"es": "opentherm",
-			"pl": "opentherm"
-		},
-		"authors": [
-			"Dutchman <rdrozda@hotmail.com>"
-		],
-		"keywords": [
-			"ioBroker",
-			"template",
-			"Smart Home",
-			"home automation"
-		],
-		"platform": "Javascript/Node.js",
-		"main": "main.js",
-		"icon": "opentherm.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.opentherm/master/admin/opentherm.png",
-		"readme": "https://github.com/iobroker-community-adapters/ioBroker.opentherm/blob/master/README.md",
-		"loglevel": "info",
-		"mode": "daemon",
-		"type": "energy",
-		"materialize": true,
-		"dependencies": [
-			{
-				"admin": ">=3.0.0"
-			}
-		],
-		"license": "MIT"
-	},
-	"native": {
-		"ipaddr": "localhost",
-		"port": "7686",
-		"DevMode" : false,
-		"DevLogging" : false,
-		"byUSB":false,
-		"byTCPIP":false,
-		"USB_Device_list":"",
-		"USBDevice": ""
-	},
-	"objects": [],
-	"instanceObjects": []
+    "common": {
+        "name": "opentherm",
+        "version": "0.2.1",
+        "news": {
+            "0.2.1": {
+                "en": "Fix translations",
+                "de": "Übersetzungen korrigieren",
+                "ru": "Исправить переводы",
+                "pt": "Corrigir traduções",
+                "nl": "Vertaling repareren",
+                "fr": "Corriger les traductions",
+                "it": "Risolvi le traduzioni",
+                "es": "Corregir traducciones",
+                "pl": "Napraw tłumaczenie",
+                "zh-cn": "修复翻译"
+            },
+            "0.1.8": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "初始发行"
+            }
+        },
+        "title": "Opentherm",
+        "titleLang": {
+            "en": "opentherm",
+            "de": "opentherm",
+            "ru": "opentherm",
+            "pt": "opentherm",
+            "nl": "opentherm",
+            "fr": "opentherm",
+            "it": "opentherm",
+            "es": "opentherm",
+            "pl": "opentherm",
+            "zh-cn": "opentherm"
+        },
+        "desc": {
+            "en": "Integrate all features of the OpenTherm Gateway into ioBroker",
+            "de": "Integriert alle Funktionen des OpenTherm Gateway in ioBroker",
+            "ru": "opentherm",
+            "pt": "opentherm",
+            "nl": "Integreerd alle funtionaliteiten van OpenTherm Gateway in ioBroker",
+            "fr": "opentherm",
+            "it": "opentherm",
+            "es": "opentherm",
+            "pl": "opentherm",
+            "zh-cn": "将OpenTherm Gateway的所有功能集成到ioBroker中"
+        },
+        "authors": [
+            "DutchmanNL <rdrozda@hotmail.com>"
+        ],
+        "keywords": [
+            "ioBroker",
+            "template",
+            "Smart Home",
+            "home automation"
+        ],
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "opentherm.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.opentherm/master/admin/opentherm.png",
+        "readme": "https://github.com/iobroker-community-adapters/ioBroker.opentherm/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "energy",
+        "materialize": true,
+        "dependencies": [
+            {
+                "admin": ">=3.0.0"
+            }
+        ],
+        "license": "MIT"
+    },
+    "native": {
+        "ipaddr": "localhost",
+        "port": "7686",
+        "DevMode": false,
+        "DevLogging": false,
+        "byUSB": false,
+        "byTCPIP": false,
+        "USB_Device_list": "",
+        "USBDevice": ""
+    },
+    "objects": [],
+    "instanceObjects": []
 }

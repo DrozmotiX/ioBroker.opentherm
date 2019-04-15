@@ -1,104 +1,14 @@
 /*global systemDictionary:true */
 'use strict';
-// @ts-ignore
+
 systemDictionary = {
-	"opentherm adapter settings": {
-		"en": "Opentherm setting",
-		"de": "Opentherm Einstellungen",
-		"ru": "Настройки адаптера для opentherm",
-		"pt": "Configurações do adaptador para opentherm",
-		"nl": "OpenTherm instellingen",
-		"fr": "Paramètres d'adaptateur pour opentherm",
-		"it": "Impostazioni dell'adattatore per opentherm",
-		"es": "Ajustes del adaptador para opentherm",
-		"pl": "Ustawienia adaptera dla opentherm"
-	},
-	"ipaddr description": {
-		"en": "IP-Adress of oT-Monitor",
-		"de": "IP-Adresse von oT-Monitor",
-		"ru": "Вариант 1 - это круто",
-		"pt": "Opção 1 é legal",
-		"nl": "IP-Adress van oT-Monitor",
-		"fr": "L'option 1 est cool",
-		"it": "L'opzione 1 è cool",
-		"es": "La opción 1 es genial",
-		"pl": "Opcja 1 jest fajna"
-	},
-	"port description": {
-		"en": "Port of oT-Monitor",
-		"de": "Port von oT-Monitor",
-		"ru": "Вариант 2 не",
-		"pt": "A opção 2 não é",
-		"nl": "Port van oT-Monitor",
-		"fr": "L'option 2 n'est pas",
-		"it": "L'opzione 2 no",
-		"es": "La opción 2 no es",
-		"pl": "Opcja 2 nie jest"
-	},
-	"DevMode description": {
-		"en": "Development Mode",
-		"de": "Entwickler Modus",
-		"ru": "Вариант 2 не",
-		"pt": "A opção 2 não é",
-		"nl": "Ontwikkelaar Modus",
-		"fr": "L'option 2 n'est pas",
-		"it": "L'opzione 2 no",
-		"es": "La opción 2 no es",
-		"pl": "Opcja 2 nie jest"
-	},
-	"DevLogging description": {
-		"en": "Developer Logging",
-		"de": "Entwickler Logging",
-		"ru": "Вариант 2 не",
-		"pt": "A opção 2 não é",
-		"nl": "Ontwikkelaar Modus",
-		"fr": "L'option 2 n'est pas",
-		"it": "L'opzione 2 no",
-		"es": "La opción 2 no es",
-		"pl": "Opcja 2 nie jest"
-	},
-	"byUSB description": {
-		"en": "Connect by USB",
-		"de": "Verbinde per USB",
-		"ru": "Вариант 2 не",
-		"pt": "A opção 2 não é",
-		"nl": "Maak verbinding per USB",
-		"fr": "L'option 2 n'est pas",
-		"it": "L'opzione 2 no",
-		"es": "La opción 2 no es",
-		"pl": "Opcja 2 nie jest"
-	},
-	"byTCPIP description": {
-		"en": "Connect by TCP/IP",
-		"de": "Verbinde per TCP/IP",
-		"ru": "Вариант 2 не",
-		"pt": "A opção 2 não é",
-		"nl": "Maak verbinding per TCP/IP",
-		"fr": "L'option 2 n'est pas",
-		"it": "L'opzione 2 no",
-		"es": "La opción 2 no es",
-		"pl": "Opcja 2 nie jest"
-	},
-	"usb": {
-		"en": "USB Device",
-		"de": "USB Graet",
-		"ru": "Вариант 2 не",
-		"pt": "A opção 2 não é",
-		"nl": "USB Apparaat",
-		"fr": "L'option 2 n'est pas",
-		"it": "L'opzione 2 no",
-		"es": "La opción 2 no es",
-		"pl": "Opcja 2 nie jest"
-	},
-	"USBDevice": {
-		"en": "Example : /dev/ttyUSB0",
-		"de": "Beispiel : /dev/ttyUSB0",
-		"ru": "Вариант 2 не",
-		"pt": "A opção 2 não é",
-		"nl": "Voorbeeld /dev/ttyUSB0",
-		"fr": "L'option 2 n'est pas",
-		"it": "L'opzione 2 no",
-		"es": "La opción 2 no es",
-		"pl": "Opcja 2 nie jest"
-	}				
+    "DevLogging description": {                      "en": "Developer Logging",                               "de": "Entwicklerprotokollierung",                       "ru": "Ведение журнала разработчика",                    "pt": "Registro do desenvolvedor",                       "nl": "Developer Logging",                               "fr": "Journalisation de développeur",                   "it": "Registrazione degli sviluppatori",                "es": "Registro de desarrollador",                       "pl": "Logowanie dewelopera",                            "zh-cn": "开发人员记录"},
+    "DevMode description": {                         "en": "Development Mode",                                "de": "Entwicklungsmodus",                               "ru": "Режим разработки",                                "pt": "Modo de desenvolvimento",                         "nl": "Ontwikkelmodus",                                  "fr": "Mode de développement",                           "it": "Modalità di sviluppo",                            "es": "Modo de desarrollo",                              "pl": "Tryb rozwoju",                                    "zh-cn": "发展模式"},
+    "USBDevice": {                                   "en": "Example : /dev/ttyUSB0",                          "de": "Beispiel: / dev / ttyUSB0",                       "ru": "Пример: / dev / ttyUSB0",                         "pt": "Exemplo: / dev / ttyUSB0",                        "nl": "Voorbeeld: / dev / ttyUSB0",                      "fr": "Exemple: / dev / ttyUSB0",                        "it": "Esempio: / dev / ttyUSB0",                        "es": "Ejemplo: / dev / ttyUSB0",                        "pl": "Przykład: / dev / ttyUSB0",                       "zh-cn": "示例：/ dev / ttyUSB0"},
+    "byTCPIP description": {                         "en": "Connect by TCP/IP",                               "de": "Verbinden Sie sich über TCP / IP",                "ru": "Подключение по TCP / IP",                         "pt": "Conecte-se por TCP / IP",                         "nl": "Verbind via TCP / IP",                            "fr": "Se connecter par TCP / IP",                       "it": "Connetti tramite TCP / IP",                       "es": "Conectar por TCP / IP",                           "pl": "Połącz przez TCP / IP",                           "zh-cn": "通过TCP / IP连接"},
+    "byUSB description": {                           "en": "Connect by USB",                                  "de": "Verbindung über USB",                             "ru": "Подключить по USB",                               "pt": "Conecte por USB",                                 "nl": "Verbind via USB",                                 "fr": "Connecter par USB",                               "it": "Connetti tramite USB",                            "es": "Conectar por USB",                                "pl": "Połącz przez USB",                                "zh-cn": "通过USB连接"},
+    "ipaddr description": {                          "en": "IP-Adress of oT-Monitor",                         "de": "IP-Adresse des oT-Monitors",                      "ru": "IP-адрес ОТ-Монитор",                             "pt": "Endereço IP do oT-Monitor",                       "nl": "IP-adres van oT-Monitor",                         "fr": "Adresse IP d'OT-Monitor",                         "it": "Indirizzo IP di oT-Monitor",                      "es": "Dirección IP de oT-Monitor",                      "pl": "Adres IP monitora oT",                            "zh-cn": "oT-Monitor的IP地址"},
+    "opentherm adapter settings": {                  "en": "Opentherm setting",                               "de": "Opentherm-Einstellung",                           "ru": "Настройка Opentherm",                             "pt": "Opentherm setting",                               "nl": "Opentherm-instelling",                            "fr": "Réglage opentherm",                               "it": "Impostazione Opentherm",                          "es": "Ajuste de opentherm",                             "pl": "Ustawienie Opentherm",                            "zh-cn": "Opentherm设置"},
+    "port description": {                            "en": "Port of oT-Monitor",                              "de": "Port des oT-Monitors",                            "ru": "Порт ОТ-Монитор",                                 "pt": "Porto de oT-Monitor",                             "nl": "Haven van oT-Monitor",                            "fr": "Port d'OT-Monitor",                               "it": "Porta di oT-Monitor",                             "es": "Puerto de oT-monitor",                            "pl": "Port monitora oT",                                "zh-cn": "oT-Monitor端口"},
+    "usb": {                                         "en": "USB Device",                                      "de": "USB Gerät",                                       "ru": "USB-устройство",                                  "pt": "Dispositivo USB",                                 "nl": "USB-apparaat",                                    "fr": "Périphérique USB",                                "it": "Dispositivo USB",                                 "es": "Dispositivo USB",                                 "pl": "Urządzenie USB",                                  "zh-cn": "USB设备"},
 };
