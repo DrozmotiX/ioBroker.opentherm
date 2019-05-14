@@ -34,7 +34,7 @@
     "gulp": "^4.0.0",
     "axios": "^0.18.0",
     "request": "^2.88.0",
-    "serialport": "^7.1.0"
+    "serialport": "^7.1.5"
   },
   "deprecated": false,
   "description": "opentherm",
