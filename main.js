@@ -126,9 +126,10 @@ function main() {
 			adapter.setState("info.Connection", { val: (JSON.stringify(error)), ack: true });
 		});
 		client.on('data', function(data) {
-		        var read = data.toString();
+			var read = data.toString();
                         completeData += read;
-                        if (completeData.match(/\r\n/)) {
+			// Check if data is correct. Only one data line to datahandler
+			if (completeData.match(/\r\n/)) {
                                 //adapter.log.info("Response: " + completeData);
                                 datahandler(completeData)
                                 completeData = '';
