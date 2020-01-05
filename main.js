@@ -106,6 +106,7 @@ function main() {
 	}
 
 	if(useTCP){
+		var completeData = '';
 		// Handle TCP-IP connection
 		try {
 			// @ts-ignore 
@@ -125,8 +126,13 @@ function main() {
 			adapter.setState("info.Connection", { val: (JSON.stringify(error)), ack: true });
 		});
 		client.on('data', function(data) {
-			
-			datahandler(data)
+		        var read = data.toString();
+                        completeData += read;
+                        if (completeData.match(/\r\n/)) {
+                                //adapter.log.info("Response: " + completeData);
+                                datahandler(completeData)
+                                completeData = '';
+                        }
 
 		});
 	}
