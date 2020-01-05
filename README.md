@@ -28,7 +28,7 @@ For more information http://otgw.tclcode.com/index.html#intro with all credits t
 
 ## Changelog
 ### 0.2.2
-* Fix read TCP/IP data
+* Fix read TCP/IP data (svenp)
 
 ### 0.2.1
 * Fix translations
@@ -62,7 +62,7 @@ For more information http://otgw.tclcode.com/index.html#intro with all credits t
 ## License
 MIT License
 
-Copyright (c) 2019 DutchmanNL
+Copyright (c) 2020 DutchmanNL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
