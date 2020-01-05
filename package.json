@@ -25,7 +25,7 @@
     "email": "rdrozda@hotmail.com"
   },
   "bugs": {
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.opentherm/issues"
+    "url": "https://github.com/svenp/ioBroker.opentherm/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -54,7 +54,7 @@
     "sinon": "^8.0.0",
     "sinon-chai": "^3.3.0"
   },
-  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.opentherm",
+  "homepage": "https://github.com/svenp/ioBroker.opentherm",
   "keywords": [
     "ioBroker",
     "template",
@@ -66,7 +66,7 @@
   "name": "iobroker.opentherm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iobroker-community-adapters/ioBroker.opentherm.git"
+    "url": "git+https://github.com/svenp/ioBroker.opentherm.git"
   },
   "scripts": {
     "lint": "npm run lint:js",
@@ -76,5 +76,5 @@
     "test:js": "mocha --opts test/mocha.custom.opts",
     "test:package": "mocha test/testPackageFiles.js --exit"
   },
-  "version": "0.2.1"
+  "version": "0.2.2"
 }
