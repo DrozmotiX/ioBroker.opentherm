@@ -6,7 +6,14 @@
             "0.2.2": {
                 "en": "Fix read TCP/IP data",
                 "de": "Korrektur TCP/IP Daten lesen",
-                }
+                "ru": "",
+                "pt": "",
+                "nl": "",
+                "fr": "",
+                "it": "",
+                "es": "",
+                "pl": "",
+                "zh-cn": ""
             },
             "0.1.8": {
                 "en": "initial release",
