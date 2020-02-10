@@ -1,19 +1,19 @@
 {
     "common": {
         "name": "opentherm",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "news": {
-            "0.2.1": {
-                "en": "Fix translations",
-                "de": "Übersetzungen korrigieren",
-                "ru": "Исправить переводы",
-                "pt": "Corrigir traduções",
-                "nl": "Vertaling repareren",
-                "fr": "Corriger les traductions",
-                "it": "Risolvi le traduzioni",
-                "es": "Corregir traducciones",
-                "pl": "Napraw tłumaczenie",
-                "zh-cn": "修复翻译"
+            "0.2.2": {
+                "en": "Fix read TCP/IP data",
+                "de": "Korrektur TCP/IP Daten lesen",
+                "ru": "",
+                "pt": "",
+                "nl": "",
+                "fr": "",
+                "it": "",
+                "es": "",
+                "pl": "",
+                "zh-cn": ""
             },
             "0.1.8": {
                 "en": "initial release",
