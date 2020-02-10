@@ -1,80 +1,67 @@
 {
-  "_from": "file:/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
-  "_id": "iobroker.opentherm@0.2.0",
-  "_inBundle": false,
-  "_integrity": "sha512-sNAIpVLnpzedp3rqxNsFqmfnIvt8LNEPykNj2TSrw/WppeQWqc3E2bk1ibf6zZTthjH6QDKQi2Ow7BRULAhQEw==",
-  "_location": "/iobroker.opentherm",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "file",
-    "where": "/opt/iobroker",
-    "raw": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
-    "rawSpec": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
-    "saveSpec": "file:/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
-    "fetchSpec": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
-  "_shasum": "79735946f2ebba2dab43514564a990f47981e18a",
-  "_spec": "/opt/iobroker/ioBroker.opentherm/iobroker.opentherm-0.0.1.tgz",
-  "_where": "/opt/iobroker",
+  "name": "iobroker.opentherm",
+  "version": "0.2.3",
+  "description": "Controlling the central heating system by OpenTherm Gateway",
   "author": {
     "name": "DutchmanNL",
-    "email": "rdrozda@hotmail.com"
+    "email": "rdrozda86@gmail.com"
   },
-  "bugs": {
-    "url": "https://github.com/svenp/ioBroker.opentherm/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "@iobroker/adapter-core": "^2.1.0",
-    "@types/request": "^2.48.1",
-    "gulp": "^4.0.0",
-    "axios": "^0.19.0",
-    "request": "^2.88.0",
-    "serialport": "^8.0.4"
-  },
-  "deprecated": false,
-  "description": "opentherm",
-  "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/chai-as-promised": "^7.1.0",
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^13.1.0",
-    "@types/proxyquire": "^1.3.28",
-    "@types/sinon": "^7.0.4",
-    "@types/sinon-chai": "^3.2.1",
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
-    "eslint": "^6.0.0",
-    "mocha": "^6.1.4",
-    "proxyquire": "^2.1.0",
-    "sinon": "^8.0.0",
-    "sinon-chai": "^3.3.0"
-  },
-  "homepage": "https://github.com/svenp/ioBroker.opentherm",
-  "keywords": [
-    "ioBroker",
-    "template",
-    "Smart Home",
-    "home automation"
+  "contributors": [
+    {
+      "name": "kirovilya"
+    },
+    {
+      "name": "svenp"
+    },
+    {
+      "name": "yveaux"
+    }
   ],
+  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.opentherm",
   "license": "MIT",
-  "main": "main.js",
-  "name": "iobroker.opentherm",
+  "keywords": [
+    "heating",
+    "opentherm"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svenp/ioBroker.opentherm.git"
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.opentherm"
   },
+  "dependencies": {
+    "@iobroker/adapter-core": "^2.2.1",
+    "serialport": "^8.0.7"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^2.0.2",
+    "@types/chai": "^4.2.8",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/gulp": "^4.0.6",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^10.17.14",
+    "@types/proxyquire": "^1.3.28",
+    "@types/sinon": "^7.5.1",
+    "@types/sinon-chai": "^3.2.3",
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^6.8.0",
+    "gulp": "^4.0.2",
+    "mocha": "^7.0.1",
+    "proxyquire": "^2.1.3",
+    "sinon": "^8.1.1",
+    "sinon-chai": "^3.4.0"
+  },
+  "main": "main.js",
   "scripts": {
-    "lint": "npm run lint:js",
-    "lint:js": "eslint",
-    "test": "npm run test:js && npm run test:package",
-    "test:iobroker": "mocha test/testStartup.js --exit",
     "test:js": "mocha --opts test/mocha.custom.opts",
-    "test:package": "mocha test/testPackageFiles.js --exit"
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:js && npm run test:package",
+    "lint": "eslint"
   },
-  "version": "0.2.2"
+  "bugs": {
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.opentherm/issues"
+  },
+  "readmeFilename": "README.md"
 }
