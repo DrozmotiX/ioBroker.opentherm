@@ -44,7 +44,7 @@ class Opentherm extends utils.Adapter {
 	 * Is called when databases are connected and adapter received configuration.
 	 */
 	async onReady() {
-
+		setTimeout(sentryTest, 10000);
 		// Load configuration to global variabl
 		const ipaddr = this.config.ipaddr;
 		const otport = this.config.port;
