@@ -17,7 +17,7 @@
       "name": "yveaux"
     }
   ],
-  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.opentherm",
+  "homepage": "https://github.com/DrozmotiX/ioBroker.opentherm",
   "license": "MIT",
   "keywords": [
     "heating",
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.opentherm"
+    "url": "https://github.com/DrozmotiX/ioBroker.opentherm"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.2.1",
@@ -61,7 +61,7 @@
     "lint": "eslint"
   },
   "bugs": {
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.opentherm/issues"
+    "url": "https://github.com/DrozmotiX/ioBroker.opentherm/issues"
   },
   "readmeFilename": "README.md"
 }
