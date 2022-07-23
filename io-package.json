@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "opentherm",
-		"version": "0.2.4",
+		"version": "0.2.5",
         "news": {
+			"0.2.5": {
+				"en": "Message library updated",
+				"de": "Nachrichtenbibliothek aktualisiert",
+				"ru": "Обновлена библиотека сообщений",
+				"pt": "Biblioteca de mensagens atualizada",
+				"nl": "Berichten bibliotheek bijgewerkt",
+				"fr": "Bibliothèque de messages mise à jour",
+				"it": "Libreria messaggi aggiornata",
+				"es": "Biblioteca del mensaje actualizada",
+				"pl": "Biblioteka zaktualizowana",
+				"zh-cn": "图书馆更新"
+			},
 			"0.2.4": {
 				"en": "SerialPort module updated",
 				"de": "SerialPort Modul Aktualisiert",

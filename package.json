@@ -1,6 +1,6 @@
 {
   "name": "iobroker.opentherm",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Controlling the central heating system by OpenTherm Gateway",
   "author": {
     "name": "DutchmanNL",
