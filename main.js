@@ -63,7 +63,7 @@ class Opentherm extends utils.Adapter {
 				this.log.info('OpenTherm : Succesfully connected on : ' + '/dev/ttyUSB0');
 				this.setState('info.connection', { val: true, ack: true });
 			} catch (error) {
-				this.log.info(error);
+				this.log.error(`${error}`);
 			}
 
 			// Connection error handling
@@ -71,68 +71,68 @@ class Opentherm extends utils.Adapter {
 				this.log.error(JSON.stringify(error));
 				this.setState('info.connection', { val: (JSON.stringify(error)), ack: true });
 			});
-	
-	
+
+
 			const parser = serialPort.pipe(new Readline({ delimiter: '\r\n' }));
 			parser.on('data', (data) => {
-				
+
 				this.log.info(data);
 				this.datahandler(data);
-	
+
 			});
-	
-			// Event at succefull connection by USB
+
+			// Event at successful connection by USB
 			serialPort.on('open', (error) => {
 
 				this.log.error('Issues  opening USB data connection : ' + error);
-			
-				// Get a list of all USB devices
-				SerialPort.list( (err, results) => {
 
-					if (err) {
-						throw err;
-					} else {
-						this.log.error(' USB devices found : ' + results);
-					}
-				});
+				// Get a list of all USB devices
+				// SerialPort..( (err, results) => {
+				//
+				// 	if (err) {
+				// 		throw err;
+				// 	} else {
+				// 		this.log.error(' USB devices found : ' + results);
+				// 	}
+				// });
 			});
-	
+
 		}
 
 		if(useTCP){
 			let completeData = '';
 			// Handle TCP-IP connection
 			try {
-				// @ts-ignore 
+				// @ts-ignore
 				client = net.connect({ host: ipaddr, port: otport},
 					() => { //'connect' listener
 						// doChannelCreate();
 						this.log.info('OpenTherm : Succesfully connected on : ' + ipaddr);
 						this.setState('info.connection', { val: true, ack: true });
-					});		
+					});
 			} catch (error) {
-				
+
 				this.log.error('OpenTherm : Connection failed on : ' + ipaddr);
-	
+
 			}
-	
+
 			// Connection error handling
 			client.on('error', (error) => {
 				try {
-					
+
 
 					this.log.error(JSON.stringify(error));
 					// this.setState('info.connection', { val: (JSON.stringify(error)), ack: true });
 
 				} catch (error) {
-					this.log.error(error);
+					this.log.error(`${error}`);
 				}
 
 			});
-	
+
 			client.on('data', (data) => {
 				try {
-					
+
 					const read = data.toString();
 					completeData += read;
 					// Check if data is correct. Only one data line to datahandler
@@ -143,11 +143,11 @@ class Opentherm extends utils.Adapter {
 					}
 
 				} catch (error) {
-					this.log.error(error);
+					this.log.error(`${error}`);
 				}
-	
+
 			});
-	
+
 		}
 	}
 
@@ -158,30 +158,30 @@ class Opentherm extends utils.Adapter {
 		if (DevLogging){this.log.info('Data received : ' + data);}
 
 		this.create_state('.info.message', 'Received Data', data);
-		
+
 		// Run check on data input if received message has correct format
 		const verify = checkhex.checkinput(this,data);
-	
+
 		// Only call translation function when received value is valid
 		if (verify != undefined) {
 			// Translate OpenTherm message to human readable objects and values
 			values = translatehex.translate_input(this, verify);
 			// Handle received data to object structure and values
 			if (values != undefined) {
-	
+
 				if (DevLogging){this.log.info('Translated values : ' + JSON.stringify(values));}
-	
+
 				// Handle array and split to unique data objects
 				for (const i in values) {
 					objtype = await this.toObjtype(values[i].Value);
-	
+
 					// if (DevLogging){this.log.info('Values of [i] : ' + i);}
 					if (DevLogging){this.log.info('Raw values of [i] : ' + JSON.stringify(values[i]));}
 					// if (DevLogging){this.log.info('Device value of [i] : ' + JSON.stringify(values[i].Device));}
 					//if (devLogging){this.log.info('Raw attribute lookkup : ' + JSON.stringify(attributes))}
 					// if (DevLogging){this.log.info('attribute lookkup : ' + JSON.stringify(state_attr['master/status/ch']));}
 					// if (DevLogging){this.log.info('Combined data with attribute values : ' + JSON.stringify(state_attr[values[i].Device]));}
-	
+
 					let channel = state_attr[values[i].Device].channel;
 					let value = values[i].Value;
 					// const name = state_attr[values[i].Device].name;
@@ -191,14 +191,14 @@ class Opentherm extends utils.Adapter {
 					// const unit = state_attr[values[i].Device].unit;
 					// const write = state_attr[values[i].Device].write;
 					const cat = values[i].msgType;
-	
+
 					// Round values if they are numbers to ensure only 2 digits after comma
 
 					// To-Do : Analyse if rounding function is realy working !
 					if (objtype == 'number') {
 						value = Math.round(value * 10)/10;
 					}
-					
+
 					if (devData){
 						this.create_state('_Dev.' + cat + '.' + name,name,value);
 						// doStateCreate('_Dev.' + cat + '.' + name,description,objtype,role,unit,write);
@@ -206,19 +206,19 @@ class Opentherm extends utils.Adapter {
 					}
 					//Write all channels to 'raw' tree for developer purposes
 					// if (DevLogging){this.log.info(name + ' with value : ' + value + unit);} // IF this loggin is needed move to state creation
-	
+
 					// Read only Read-ACK related values and store in states (we need to find out which datatype for which state must be used!)
 					if (values[i].msgType == '4'){
-												
+
 						if (channel != '') {channel = channel + '.';}
-	
+
 						// doStateCreate(channel + name,description,objtype,role,unit,write);
 
 						this.create_state(channel + name, name, value);
 
 						// this.setState(channel + name, { val: value, ack: true });
 						// if (DevLogging){this.log.info('Data written to state : ' + name);}
-	
+
 					}
 				}
 			}
@@ -243,6 +243,7 @@ class Opentherm extends utils.Adapter {
 				type: 'state',
 				common: {
 					name: state_name,
+					read: role,
 					role: role,
 					type: type,
 					unit: unit,
@@ -270,43 +271,43 @@ class Opentherm extends utils.Adapter {
 		} else {
 			objtype = 'string';
 		}
-	
+
 		return objtype;
 	}
-	
+
 	// Create logic channels for states
 	async doChannelCreate(){
 		const DevLogging = this.config.DevLogging;
 		const devData = this.config.DevMode;
 		// Create channels for RAW-Data if Dev-Mode is activated
 		if (devData){this.doChannelCreateDev();}
-		
+
 		this.createChannel('','config',{
 			'name': 'config'
 		});
-	
+
 		this.createChannel('','control',{
 			'name': 'control'
 		});
-	
+
 		this.createChannel('','fault',{
 			'name': 'faul'
 		});
-	
+
 		this.createChannel('','info',{
 			'name': 'info'
 		});
-	
+
 		this.createChannel('','status',{
 			'name': 'status'
 		});
-	
+
 		if (DevLogging){this.log.info('Channels create');}
-	
+
 	}
-	
+
 	async doChannelCreateDev(){
-	
+
 		this.setObjectNotExists('_Dev', {
 			type: 'device',
 			common: {
@@ -314,45 +315,45 @@ class Opentherm extends utils.Adapter {
 			},
 			native: {},
 		});
-	
+
 		this.createChannel('_Dev','0',{
 			'name': 'Read-Data || msgType : 0'
 		});
-	
+
 		this.createChannel('_Dev','1',{
 			'name': 'Write-Data || msgType : 1'
 		});
-	
+
 		this.createChannel('_Dev','2',{
 			'name': 'Read-Ack || msgType : 2'
 		});
-	
+
 		this.createChannel('_Dev','3',{
 			'name': 'Write-Ack || msgType : 3'
 		});
-	
+
 		this.createChannel('_Dev','4',{
 			'name': 'Data-Inv || msgType : 4'
 		});
-	
+
 		this.createChannel('_Dev','5',{
 			'name': 'Unk-DataId || msgType : 5'
 		});
-	
+
 		this.createChannel('_Dev','6',{
 			'name': '????????? || msgType : 6'
 		});
-	
+
 		this.createChannel('_Dev','7',{
 			'name': '????????? || msgType : 7'
 		});
-	
+
 		this.createChannel('_Dev','8',{
 			'name': '????????? || msgType : 8'
 		});
-	
+
 		this.log.info('Channels created');
-	
+
 	}
 
 	/**

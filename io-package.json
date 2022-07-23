@@ -1,8 +1,20 @@
 {
 	"common": {
 		"name": "opentherm",
-		"version": "0.2.4-alpha.0",
+		"version": "0.2.4",
         "news": {
+			"0.2.4": {
+				"en": "SerialPort module updated",
+				"de": "SerialPort Modul Aktualisiert",
+				"ru": "Модуль SerialPort Обновлено",
+				"pt": "Módulo SerialPort Actualization",
+				"nl": "SerialPort module Update",
+				"fr": "Module SerialPort Mis à jour",
+				"it": "Modulo porta seriale Aggiornato",
+				"es": "Módulo SerialPort Actualize",
+				"pl": "Moduł multimedialny Updatek",
+				"zh-cn": "时间单元 最新资料"
+			},
             "0.2.3": {
 				"en": "Adapter rebuild",
 				"de": "Adapter neu aufgebaut",
