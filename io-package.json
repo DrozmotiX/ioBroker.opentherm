@@ -1,55 +1,55 @@
 {
-	"common": {
-		"name": "opentherm",
-		"version": "0.2.5",
+    "common": {
+        "name": "opentherm",
+        "version": "0.2.5",
         "news": {
-			"0.2.5": {
-				"en": "Message library updated",
-				"de": "Nachrichtenbibliothek aktualisiert",
-				"ru": "Обновлена библиотека сообщений",
-				"pt": "Biblioteca de mensagens atualizada",
-				"nl": "Berichten bibliotheek bijgewerkt",
-				"fr": "Bibliothèque de messages mise à jour",
-				"it": "Libreria messaggi aggiornata",
-				"es": "Biblioteca del mensaje actualizada",
-				"pl": "Biblioteka zaktualizowana",
-				"zh-cn": "图书馆更新"
-			},
-			"0.2.4": {
-				"en": "SerialPort module updated",
-				"de": "SerialPort Modul Aktualisiert",
-				"ru": "Модуль SerialPort Обновлено",
-				"pt": "Módulo SerialPort Actualization",
-				"nl": "SerialPort module Update",
-				"fr": "Module SerialPort Mis à jour",
-				"it": "Modulo porta seriale Aggiornato",
-				"es": "Módulo SerialPort Actualize",
-				"pl": "Moduł multimedialny Updatek",
-				"zh-cn": "时间单元 最新资料"
-			},
+            "0.2.5": {
+                "en": "Message library updated",
+                "de": "Nachrichtenbibliothek aktualisiert",
+                "ru": "Обновлена библиотека сообщений",
+                "pt": "Biblioteca de mensagens atualizada",
+                "nl": "Berichten bibliotheek bijgewerkt",
+                "fr": "Bibliothèque de messages mise à jour",
+                "it": "Libreria messaggi aggiornata",
+                "es": "Biblioteca del mensaje actualizada",
+                "pl": "Biblioteka zaktualizowana",
+                "zh-cn": "图书馆更新"
+            },
+            "0.2.4": {
+                "en": "SerialPort module updated",
+                "de": "SerialPort Modul Aktualisiert",
+                "ru": "Модуль SerialPort Обновлено",
+                "pt": "Módulo SerialPort Actualization",
+                "nl": "SerialPort module Update",
+                "fr": "Module SerialPort Mis à jour",
+                "it": "Modulo porta seriale Aggiornato",
+                "es": "Módulo SerialPort Actualize",
+                "pl": "Moduł multimedialny Updatek",
+                "zh-cn": "时间单元 最新资料"
+            },
             "0.2.3": {
-				"en": "Adapter rebuild",
-				"de": "Adapter neu aufgebaut",
-				"ru": "Восстановление адаптера",
-				"pt": "Reconstrução do adaptador",
-				"nl": "Adapter opnieuw opbouwen",
-				"fr": "Reconstruction de l'adaptateur",
-				"it": "Ricostruzione dell'adattatore",
-				"es": "Adaptador reconstruido",
-				"pl": "Przebudowa adaptera",
-				"zh-cn": "适配器重建"
-			},
+                "en": "Adapter rebuild",
+                "de": "Adapter neu aufgebaut",
+                "ru": "Восстановление адаптера",
+                "pt": "Reconstrução do adaptador",
+                "nl": "Adapter opnieuw opbouwen",
+                "fr": "Reconstruction de l'adaptateur",
+                "it": "Ricostruzione dell'adattatore",
+                "es": "Adaptador reconstruido",
+                "pl": "Przebudowa adaptera",
+                "zh-cn": "适配器重建"
+            },
             "0.2.2": {
-				"en": "Bug fix, read TCP/IP data",
-				"de": "Fehlerbehebung, TCP / IP-Daten lesen",
-				"ru": "Исправление ошибки, чтение данных TCP / IP",
-				"pt": "Correção de bug, leia dados TCP / IP",
-				"nl": "Bugfix, lees TCP / IP-gegevens",
-				"fr": "Correction d'un bug, lecture des données TCP / IP",
-				"it": "Bug fix, leggere i dati TCP / IP",
-				"es": "Corrección de errores, leer datos TCP / IP",
-				"pl": "Poprawka błędu, odczyt danych TCP / IP",
-				"zh-cn": "错误修复，读取TCP / IP数据"
+                "en": "Bug fix, read TCP/IP data",
+                "de": "Fehlerbehebung, TCP / IP-Daten lesen",
+                "ru": "Исправление ошибки, чтение данных TCP / IP",
+                "pt": "Correção de bug, leia dados TCP / IP",
+                "nl": "Bugfix, lees TCP / IP-gegevens",
+                "fr": "Correction d'un bug, lecture des données TCP / IP",
+                "it": "Bug fix, leggere i dati TCP / IP",
+                "es": "Corrección de errores, leer datos TCP / IP",
+                "pl": "Poprawka błędu, odczyt danych TCP / IP",
+                "zh-cn": "错误修复，读取TCP / IP数据"
             },
             "0.1.8": {
                 "en": "initial release",
@@ -64,95 +64,95 @@
                 "zh-cn": "初始发行"
             }
         },
-		"title": "OpenTherm Gateway",
-		"titleLang": {
-			"en": "OpenTherm Gateway",
-			"de": "OpenTherm Gateway",
-			"ru": "OpenTherm Gateway",
-			"pt": "OpenTherm Gateway",
-			"nl": "OpenTherm Gateway",
-			"fr": "OpenTherm Gateway",
-			"it": "OpenTherm Gateway",
-			"es": "OpenTherm Gateway",
-			"pl": "OpenTherm Gateway",
-			"zh-cn": "OpenTherm Gateway"
-		},
-		"desc": {
-			"en": "Controlling the central heating system by OpenTherm Gateway",
-			"de": "Controlling the central heating system by OpenTherm Gateway",
-			"ru": "Controlling the central heating system by OpenTherm Gateway",
-			"pt": "Controlling the central heating system by OpenTherm Gateway",
-			"nl": "Controlling the central heating system by OpenTherm Gateway",
-			"fr": "Controlling the central heating system by OpenTherm Gateway",
-			"it": "Controlling the central heating system by OpenTherm Gateway",
-			"es": "Controlling the central heating system by OpenTherm Gateway",
-			"pl": "Controlling the central heating system by OpenTherm Gateway",
-			"zh-cn": "Controlling the central heating system by OpenTherm Gateway"
-		},
-		"authors": [
-			"DutchmanNL <rdrozda86@gmail.com>"
-		],
-		"keywords": [
-			"heating",
-			"opentherm"
-		],
-		"license": "MIT",
-		"platform": "Javascript/Node.js",
-		"main": "main.js",
-		"icon": "opentherm.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/DrozmotiX/ioBroker.opentherm/master/admin/opentherm.png",
-		"readme": "https://github.com/DrozmotiX/ioBroker.opentherm/blob/master/README.md",
-		"loglevel": "info",
-		"mode": "daemon",
-		"type": "hardware",
-		"compact": true,
-		"connectionType": "local",
-		"dataSource": "push",
-		"materialize": true,
-		"plugins": {
-			"sentry": {
-				"dsn": "https://153d515ffc4a4288a4bbdb241ea6f787@sentry.iobroker.net/23"
-			}
-		},
-		"dependencies": [
-			{
-				"js-controller": ">=1.4.2"
-			}
-		]
-	},
-	"native": {
-		"ipaddr": "localhost",
-		"port": "7686",
-		"DevMode": false,
-		"DevLogging": false,
-		"byUSB": false,
-		"byTCPIP": false,
-		"USB_Device_list": "",
-		"USBDevice": ""
-	},
-	"objects": [],
-	"instanceObjects": [
-		{
-			"_id": "info",
-			"type": "channel",
-			"common": {
-				"name": "Information"
-			},
-			"native": {}
-		},
-		{
-			"_id": "info.connection",
-			"type": "state",
-			"common": {
-				"role": "indicator.connected",
-				"name": "Device or service connected",
-				"type": "boolean",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
-	]
+        "title": "OpenTherm Gateway",
+        "titleLang": {
+            "en": "OpenTherm Gateway",
+            "de": "OpenTherm Gateway",
+            "ru": "OpenTherm Gateway",
+            "pt": "OpenTherm Gateway",
+            "nl": "OpenTherm Gateway",
+            "fr": "OpenTherm Gateway",
+            "it": "OpenTherm Gateway",
+            "es": "OpenTherm Gateway",
+            "pl": "OpenTherm Gateway",
+            "zh-cn": "OpenTherm Gateway"
+        },
+        "desc": {
+            "en": "Controlling the central heating system by OpenTherm Gateway",
+            "de": "Controlling the central heating system by OpenTherm Gateway",
+            "ru": "Controlling the central heating system by OpenTherm Gateway",
+            "pt": "Controlling the central heating system by OpenTherm Gateway",
+            "nl": "Controlling the central heating system by OpenTherm Gateway",
+            "fr": "Controlling the central heating system by OpenTherm Gateway",
+            "it": "Controlling the central heating system by OpenTherm Gateway",
+            "es": "Controlling the central heating system by OpenTherm Gateway",
+            "pl": "Controlling the central heating system by OpenTherm Gateway",
+            "zh-cn": "Controlling the central heating system by OpenTherm Gateway"
+        },
+        "authors": [
+            "DutchmanNL <rdrozda86@gmail.com>"
+        ],
+        "keywords": [
+            "heating",
+            "opentherm"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "opentherm.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/DrozmotiX/ioBroker.opentherm/master/admin/opentherm.png",
+        "readme": "https://github.com/DrozmotiX/ioBroker.opentherm/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "hardware",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "push",
+        "materialize": true,
+        "plugins": {
+            "sentry": {
+                "dsn": "https://153d515ffc4a4288a4bbdb241ea6f787@sentry.iobroker.net/23"
+            }
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=1.4.2"
+            }
+        ]
+    },
+    "native": {
+        "ipaddr": "localhost",
+        "port": "7686",
+        "DevMode": false,
+        "DevLogging": false,
+        "byUSB": false,
+        "byTCPIP": false,
+        "USB_Device_list": "",
+        "USBDevice": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
 }
