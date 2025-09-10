@@ -15,58 +15,6 @@
                 "pl": "Biblioteka zaktualizowana",
                 "zh-cn": "图书馆更新",
                 "uk": "Message library updated"
-            },
-            "0.2.4": {
-                "en": "SerialPort module updated",
-                "de": "SerialPort Modul Aktualisiert",
-                "ru": "Модуль SerialPort Обновлено",
-                "pt": "Módulo SerialPort Actualization",
-                "nl": "SerialPort module Update",
-                "fr": "Module SerialPort Mis à jour",
-                "it": "Modulo porta seriale Aggiornato",
-                "es": "Módulo SerialPort Actualize",
-                "pl": "Moduł multimedialny Updatek",
-                "zh-cn": "时间单元 最新资料",
-                "uk": "SerialPort module updated"
-            },
-            "0.2.3": {
-                "en": "Adapter rebuild",
-                "de": "Adapter neu aufgebaut",
-                "ru": "Восстановление адаптера",
-                "pt": "Reconstrução do adaptador",
-                "nl": "Adapter opnieuw opbouwen",
-                "fr": "Reconstruction de l'adaptateur",
-                "it": "Ricostruzione dell'adattatore",
-                "es": "Adaptador reconstruido",
-                "pl": "Przebudowa adaptera",
-                "zh-cn": "适配器重建",
-                "uk": "Adapter rebuild"
-            },
-            "0.2.2": {
-                "en": "Bug fix, read TCP/IP data",
-                "de": "Fehlerbehebung, TCP / IP-Daten lesen",
-                "ru": "Исправление ошибки, чтение данных TCP / IP",
-                "pt": "Correção de bug, leia dados TCP / IP",
-                "nl": "Bugfix, lees TCP / IP-gegevens",
-                "fr": "Correction d'un bug, lecture des données TCP / IP",
-                "it": "Bug fix, leggere i dati TCP / IP",
-                "es": "Corrección de errores, leer datos TCP / IP",
-                "pl": "Poprawka błędu, odczyt danych TCP / IP",
-                "zh-cn": "错误修复，读取TCP / IP数据",
-                "uk": "Bug fix, read TCP/IP data"
-            },
-            "0.1.8": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "初始发行",
-                "uk": "initial release"
             }
         },
         "title": "OpenTherm Gateway",
@@ -124,7 +72,12 @@
         },
         "dependencies": [
             {
-                "js-controller": ">=1.4.2"
+                "js-controller": ">=5.0.19"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=6.17.14"
             }
         ]
     },
