@@ -27,6 +27,9 @@
     "type": "git",
     "url": "https://github.com/DrozmotiX/ioBroker.opentherm"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@iobroker/adapter-core": "^3.3.2",
     "serialport": "^10.4.0"
