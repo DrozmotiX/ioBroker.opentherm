@@ -13,7 +13,8 @@
                 "it": "Libreria messaggi aggiornata",
                 "es": "Biblioteca del mensaje actualizada",
                 "pl": "Biblioteka zaktualizowana",
-                "zh-cn": "图书馆更新"
+                "zh-cn": "图书馆更新",
+                "uk": "Message library updated"
             },
             "0.2.4": {
                 "en": "SerialPort module updated",
@@ -25,7 +26,8 @@
                 "it": "Modulo porta seriale Aggiornato",
                 "es": "Módulo SerialPort Actualize",
                 "pl": "Moduł multimedialny Updatek",
-                "zh-cn": "时间单元 最新资料"
+                "zh-cn": "时间单元 最新资料",
+                "uk": "SerialPort module updated"
             },
             "0.2.3": {
                 "en": "Adapter rebuild",
@@ -37,7 +39,8 @@
                 "it": "Ricostruzione dell'adattatore",
                 "es": "Adaptador reconstruido",
                 "pl": "Przebudowa adaptera",
-                "zh-cn": "适配器重建"
+                "zh-cn": "适配器重建",
+                "uk": "Adapter rebuild"
             },
             "0.2.2": {
                 "en": "Bug fix, read TCP/IP data",
@@ -49,7 +52,8 @@
                 "it": "Bug fix, leggere i dati TCP / IP",
                 "es": "Corrección de errores, leer datos TCP / IP",
                 "pl": "Poprawka błędu, odczyt danych TCP / IP",
-                "zh-cn": "错误修复，读取TCP / IP数据"
+                "zh-cn": "错误修复，读取TCP / IP数据",
+                "uk": "Bug fix, read TCP/IP data"
             },
             "0.1.8": {
                 "en": "initial release",
@@ -61,7 +65,8 @@
                 "it": "Versione iniziale",
                 "es": "Versión inicial",
                 "pl": "Pierwsze wydanie",
-                "zh-cn": "初始发行"
+                "zh-cn": "初始发行",
+                "uk": "initial release"
             }
         },
         "title": "OpenTherm Gateway",
@@ -75,7 +80,8 @@
             "it": "OpenTherm Gateway",
             "es": "OpenTherm Gateway",
             "pl": "OpenTherm Gateway",
-            "zh-cn": "OpenTherm Gateway"
+            "zh-cn": "OpenTherm Gateway",
+            "uk": "OpenTherm Gateway"
         },
         "desc": {
             "en": "Controlling the central heating system by OpenTherm Gateway",
@@ -87,7 +93,8 @@
             "it": "Controlling the central heating system by OpenTherm Gateway",
             "es": "Controlling the central heating system by OpenTherm Gateway",
             "pl": "Controlling the central heating system by OpenTherm Gateway",
-            "zh-cn": "Controlling the central heating system by OpenTherm Gateway"
+            "zh-cn": "Controlling the central heating system by OpenTherm Gateway",
+            "uk": "Controlling the central heating system by OpenTherm Gateway"
         },
         "authors": [
             "DutchmanNL <rdrozda86@gmail.com>"
