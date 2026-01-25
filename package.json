@@ -20,6 +20,7 @@
   "homepage": "https://github.com/DrozmotiX/ioBroker.opentherm",
   "license": "MIT",
   "keywords": [
+    "ioBroker",
     "heating",
     "opentherm"
   ],
