@@ -14,14 +14,14 @@ const state_attr = require(__dirname + '/lib/state_attr.js'); // Attribute libra
 const SerialPort = require('serialport');
 const Readline = require('@serialport/parser-readline');
 // Modules requird for TCP-IP conection
-const net = require('net');
+const net = require('node:net');
 // Opentherm specific librarys to translate hex-values
 const checkhex = require(__dirname + '/lib/otgwdec');
 const translatehex = require(__dirname + '/lib/openthermdec');
 
 let client, values, objtype, serialPort;
 
-// const fs = require('fs');
+// const fs = require('node:fs');
 
 class Opentherm extends utils.Adapter {
 
