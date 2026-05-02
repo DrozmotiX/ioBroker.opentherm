@@ -39,6 +39,9 @@ If you like my work, please feel free to provide a personal donation
 
 ## Changelog
 
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
+
 ### 0.2.5 (2022-07-23) - Message library updated
 * (DutchmanNL) Message library updated
 
