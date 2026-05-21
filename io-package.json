@@ -1,118 +1,118 @@
 {
-    "common": {
-        "name": "opentherm",
-        "version": "0.2.5",
-        "news": {
-            "0.2.5": {
-                "en": "Message library updated",
-                "de": "Nachrichtenbibliothek aktualisiert",
-                "ru": "Обновлена библиотека сообщений",
-                "pt": "Biblioteca de mensagens atualizada",
-                "nl": "Berichten bibliotheek bijgewerkt",
-                "fr": "Bibliothèque de messages mise à jour",
-                "it": "Libreria messaggi aggiornata",
-                "es": "Biblioteca del mensaje actualizada",
-                "pl": "Biblioteka zaktualizowana",
-                "zh-cn": "图书馆更新",
-                "uk": "Message library updated"
-            }
-        },
-        "title": "OpenTherm Gateway",
-        "titleLang": {
-            "en": "OpenTherm Gateway",
-            "de": "OpenTherm Gateway",
-            "ru": "OpenTherm Gateway",
-            "pt": "OpenTherm Gateway",
-            "nl": "OpenTherm Gateway",
-            "fr": "OpenTherm Gateway",
-            "it": "OpenTherm Gateway",
-            "es": "OpenTherm Gateway",
-            "pl": "OpenTherm Gateway",
-            "zh-cn": "OpenTherm Gateway",
-            "uk": "OpenTherm Gateway"
-        },
-        "desc": {
-            "en": "Controlling the central heating system by OpenTherm Gateway",
-            "de": "Controlling the central heating system by OpenTherm Gateway",
-            "ru": "Controlling the central heating system by OpenTherm Gateway",
-            "pt": "Controlling the central heating system by OpenTherm Gateway",
-            "nl": "Controlling the central heating system by OpenTherm Gateway",
-            "fr": "Controlling the central heating system by OpenTherm Gateway",
-            "it": "Controlling the central heating system by OpenTherm Gateway",
-            "es": "Controlling the central heating system by OpenTherm Gateway",
-            "pl": "Controlling the central heating system by OpenTherm Gateway",
-            "zh-cn": "Controlling the central heating system by OpenTherm Gateway",
-            "uk": "Controlling the central heating system by OpenTherm Gateway"
-        },
-        "authors": [
-            "DutchmanNL <rdrozda86@gmail.com>"
-        ],
-        "keywords": [
-            "heating",
-            "opentherm"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "icon": "opentherm.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/DrozmotiX/ioBroker.opentherm/master/admin/opentherm.png",
-        "readme": "https://github.com/DrozmotiX/ioBroker.opentherm/blob/master/README.md",
-        "loglevel": "info",
-        "mode": "daemon",
-        "type": "hardware",
-        "compact": true,
-        "connectionType": "local",
-        "dataSource": "push",
-        "materialize": true,
-        "plugins": {
-            "sentry": {
-                "dsn": "https://153d515ffc4a4288a4bbdb241ea6f787@sentry.iobroker.net/23"
-            }
-        },
-        "dependencies": [
-            {
-                "js-controller": ">=5.0.19"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=6.17.14"
-            }
-        ]
+  "common": {
+    "name": "opentherm",
+    "version": "0.2.5",
+    "news": {
+      "0.2.5": {
+        "en": "Message library updated",
+        "de": "Nachrichtenbibliothek aktualisiert",
+        "ru": "Обновлена библиотека сообщений",
+        "pt": "Biblioteca de mensagens atualizada",
+        "nl": "Berichten bibliotheek bijgewerkt",
+        "fr": "Bibliothèque de messages mise à jour",
+        "it": "Libreria messaggi aggiornata",
+        "es": "Biblioteca del mensaje actualizada",
+        "pl": "Biblioteka zaktualizowana",
+        "zh-cn": "图书馆更新",
+        "uk": "Message library updated"
+      }
     },
-    "native": {
-        "ipaddr": "localhost",
-        "port": "7686",
-        "DevMode": false,
-        "DevLogging": false,
-        "byUSB": false,
-        "byTCPIP": false,
-        "USB_Device_list": "",
-        "USBDevice": ""
+    "title": "OpenTherm Gateway",
+    "titleLang": {
+      "en": "OpenTherm Gateway",
+      "de": "OpenTherm Gateway",
+      "ru": "OpenTherm Gateway",
+      "pt": "OpenTherm Gateway",
+      "nl": "OpenTherm Gateway",
+      "fr": "OpenTherm Gateway",
+      "it": "OpenTherm Gateway",
+      "es": "OpenTherm Gateway",
+      "pl": "OpenTherm Gateway",
+      "zh-cn": "OpenTherm Gateway",
+      "uk": "OpenTherm Gateway"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Device or service connected",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
+    "desc": {
+      "en": "Controlling the central heating system by OpenTherm Gateway",
+      "de": "Controlling the central heating system by OpenTherm Gateway",
+      "ru": "Controlling the central heating system by OpenTherm Gateway",
+      "pt": "Controlling the central heating system by OpenTherm Gateway",
+      "nl": "Controlling the central heating system by OpenTherm Gateway",
+      "fr": "Controlling the central heating system by OpenTherm Gateway",
+      "it": "Controlling the central heating system by OpenTherm Gateway",
+      "es": "Controlling the central heating system by OpenTherm Gateway",
+      "pl": "Controlling the central heating system by OpenTherm Gateway",
+      "zh-cn": "Controlling the central heating system by OpenTherm Gateway",
+      "uk": "Controlling the central heating system by OpenTherm Gateway"
+    },
+    "authors": [
+      "DutchmanNL <rdrozda86@gmail.com>"
+    ],
+    "keywords": [
+      "heating",
+      "opentherm"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "opentherm.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/DrozmotiX/ioBroker.opentherm/master/admin/opentherm.png",
+    "readme": "https://github.com/DrozmotiX/ioBroker.opentherm/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "hardware",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "materialize": true,
+    "plugins": {
+      "sentry": {
+        "dsn": "https://153d515ffc4a4288a4bbdb241ea6f787@sentry.iobroker.net/23"
+      }
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=6.17.14"
+      }
     ]
+  },
+  "native": {
+    "ipaddr": "localhost",
+    "port": "7686",
+    "DevMode": false,
+    "DevLogging": false,
+    "byUSB": false,
+    "byTCPIP": false,
+    "USB_Device_list": "",
+    "USBDevice": ""
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
