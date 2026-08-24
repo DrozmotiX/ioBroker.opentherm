@@ -14,10 +14,9 @@
                 "es": "Biblioteca del mensaje actualizada",
                 "pl": "Biblioteka zaktualizowana",
                 "zh-cn": "图书馆更新",
-                "uk": "Message library updated"
+                "uk": "Оновлено бібліотеку повідомлень"
             }
         },
-        "title": "OpenTherm Gateway",
         "titleLang": {
             "en": "OpenTherm Gateway",
             "de": "OpenTherm Gateway",
@@ -51,9 +50,12 @@
             "heating",
             "opentherm"
         ],
-        "license": "MIT",
+        "licenseInformation": {
+            "license": "MIT",
+            "type": "free"
+        },
+        "tier": 3,
         "platform": "Javascript/Node.js",
-        "main": "main.js",
         "icon": "opentherm.png",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/DrozmotiX/ioBroker.opentherm/master/admin/opentherm.png",
@@ -72,12 +74,12 @@
         },
         "dependencies": [
             {
-                "js-controller": ">=5.0.19"
+                "js-controller": ">=6.0.11"
             }
         ],
         "globalDependencies": [
             {
-                "admin": ">=6.17.14"
+                "admin": ">=7.6.17"
             }
         ]
     },
