@@ -66,7 +66,9 @@
         "compact": true,
         "connectionType": "local",
         "dataSource": "push",
-        "materialize": true,
+        "adminUI": {
+            "config": "materialize"
+        },
         "plugins": {
             "sentry": {
                 "dsn": "https://153d515ffc4a4288a4bbdb241ea6f787@sentry.iobroker.net/23"
@@ -79,7 +81,7 @@
         ],
         "globalDependencies": [
             {
-                "admin": ">=7.6.17"
+                "admin": ">=7.6.20"
             }
         ]
     },
