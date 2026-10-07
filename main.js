@@ -21,7 +21,7 @@ const translatehex = require(`${__dirname}/lib/openthermdec`);
 
 let client, values, objtype, serialPort;
 
-// const fs = require('fs');
+// const fs = require('node:fs');
 
 class Opentherm extends utils.Adapter {
     /**
